@@ -1,0 +1,119 @@
+body {
+    background-image: none;
+    background-attachment: none;
+    background-repeat: none;
+    background-position: none;
+    background-color: #1d1b1b !important;
+}
+
+.name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    text-decoration: none;
+}
+
+.izquierda {
+    height: 90vh;
+    background-color: #7a7db3;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.rounded-circle {
+    width: 30px;
+    height: 30px;
+}
+
+
+.userEmitting a {
+    text-decoration: none;
+}
+
+.containerUsersEmitting #userEmitting a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#userEmitting>a>i {
+    color: #1d1b1b;
+}
+
+.containerUsersEmitting {
+    background-color: #8b8ec4;
+    border-radius: 2rem;
+    transition: .5s ease;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.containerUsersEmitting:hover {
+    background-color: #999cd6;
+}
+
+
+
+#contain-box-msg {
+    height: 90vh;
+}
+
+#box-msg {
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+#img {
+    border: .5px solid rgba(105, 98, 98, 0.459);
+    border-radius: 2rem;
+}
+
+#img img {
+    object-fit: contain;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.containerChat {
+    border: .5px solid rgba(105, 98, 98, 0.459);
+    border-radius: 10px;
+    background-color: #c4c2c2;
+}
+
+#msg {
+    word-wrap: break-word;
+}
+
+#i-msg {
+    color: #333030;
+}
+
+#p-msg {
+    color: #353131;
+}
+
+
+i {
+    color: rgb(102, 95, 109);
+    margin-left: 3px;
+}
+
+
+.error {
+    height: 200px;
+    width: 100%;
+    background-color: #7a7b8d;
+    border-radius: 10px;
+}
+
+.error2 {
+    height: 200px;
+}
+
+.error>p {
+    color: whitesmoke;
+}

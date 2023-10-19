@@ -1,0 +1,313 @@
+@font-face {
+    font-family: miFuente;
+    src: url(/P22MackinacPro-Bold_16.otf);
+}
+
+.animated {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s ease;
+}
+
+html {
+    background: none;
+}
+
+body {
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(121deg, rgba(2, 0, 36, 1) 37%, rgba(73, 27, 164, 1) 74%, rgba(112, 21, 247, 1) 88%);
+}
+
+body::-webkit-scrollbar,
+#output::-webkit-scrollbar,
+#prueba::-webkit-scrollbar,
+#prueba2::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track,
+#output::-webkit-scrollbar-track {
+    background: rgb(144, 86, 199);
+}
+
+body::-webkit-scrollbar-thumb,
+#output::-webkit-scrollbar-thumb,
+#prueba::-webkit-scrollbar-thumb,
+#prueba2::-webkit-scrollbar-thumb {
+    background-color: rgb(91, 19, 185);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: miFuente;
+    font-size: 20px;
+}
+
+#encabezado {
+    color: rgb(114, 108, 108);
+    font-family: Inter Var, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#prueba {
+    color: #fff;
+}
+
+.condiciones {
+    color: #fff;
+    font-size: 10px;
+}
+
+/* -------------------------------------- LOGIN -------------------------------------------- */
+
+.login-box {
+    /* width: 100%; */
+    padding: 40px;
+    background: linear-gradient(#412185, #180f4b);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: .5px solid #ffffff0e;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box #politica label {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+#submit-login {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #191d46;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    background: linear-gradient(145deg, #cacaca88, #4825808a);
+
+}
+
+#submit-login:hover,
+#enterForFree:hover {
+    background: #24237c;
+    color: #03e9f4;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4;
+}
+
+#contain-login-singUp {
+    text-align: center;
+}
+
+#login-singUp {
+    color: #507c80;
+    text-decoration: none;
+}
+
+
+
+
+
+.cssbuttons-io-button {
+    background: linear-gradient(145deg, #cacaca88, #4825808a);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button .icon svg a {
+    width: 100%;
+    height: 100%;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+
+    height: auto;
+    background-color: #7e81bd;
+    z-index: 999;
+}
+
+.modal .modal-content {
+    background-color: #999cd6;
+    height: 95vh;
+    overflow-y: scroll;
+}
+
+.modal-content {
+    background-color: #999cd6;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.modal-close {
+    position: absolute;
+    background-color: #b3b3b348;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 4px;
+    transition: all .5s ease;
+}
+
+.modal-close:hover {
+    background-color: #979494;
+    color: rgb(85, 83, 83);
+}
+
+#checkbox {
+    width: 40px;
+}
+
+
+/* error */
+
+#modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #modal {
+    background-color: #ffcccc; /* Cambiar el valor del fondo a un rojo más suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  
+  #modal-close {
+    position: absolute;
+    top: 5px; /* Ajustar la separación de la X respecto al borde superior del modal */
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333; /* Cambiar el color de la X a un tono más oscuro */
+  }
+  
+  
+  #modal-message {
+    margin: 30px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  
+  
+  

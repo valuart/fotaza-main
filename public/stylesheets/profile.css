@@ -1,0 +1,126 @@
+@font-face {
+    font-family: miFuente;
+    src: url(/P22MackinacPro-Bold_16.otf);
+}
+
+
+body {
+    background: #271c14 !important;
+}
+
+
+body::-webkit-scrollbar,
+#box-cards::-webkit-scrollbar,
+#top-photos::-webkit-scrollbar {
+    width: 1px;
+}
+
+body::-webkit-scrollbar-track,
+#box-cards::-webkit-scrollbar-track,
+#top-photos::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb,
+#box-cards::-webkit-scrollbar-thumb,
+#top-photos::-webkit-scrollbar-thumb {
+    background: linear-gradient(121deg, rgb(0, 0, 0) 37%, rgba(73, 27, 164, 1) 74%, rgba(112, 21, 247, 1) 88%);
+
+}
+
+i{
+    color: rgb(172, 171, 169);
+    font-size: 12px;
+}
+
+@font-face {
+    font-family: miFuente;
+    src: url(/fonts/P22MackinacPro-Bold_16.otf);
+}
+
+#contain-cards {
+    background-color: #2223278c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /*  border: .1px solid rgb(0, 0, 0); */
+    font-family: miFuente;
+    color: #f0f0f0;
+}
+
+#img-profile img {
+    width: 90px;
+    min-width: 70px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+#img-profile{
+    border-right: .5px solid rgba(70, 69, 69, 0.849);
+}
+
+#contain-datos{
+background-color: #7a7db3;
+}
+
+p{
+    color:rgb(22, 22, 22);
+}
+
+#card-img {
+    padding: 0;
+    background-color: #53569b;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+#card-img img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: .5px solid rgba(90, 89, 89, 0.575);
+}
+
+#abrirComments {
+    transition: .5s ease all;
+    text-decoration: none;
+    color: #000;
+}
+
+
+#delete-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#delete-photo > a{
+    color: rgb(172, 171, 169);
+}
+
+#delete {
+    width: 40px;
+    height: 40px;
+    color: rgb(119, 21, 21);
+}
+
+#cerrar-comments {
+    width: 20px;
+    height: 20px;
+    color: black;
+    transition: 1s ease all;
+}
+
+#icon-cerrar-comment {
+    color: black;
+}
+
+#details {
+    font-size: 40px;
+}
